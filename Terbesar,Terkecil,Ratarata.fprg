@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Intel Desktop"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-26 01:15:33 PM"/>
+        <attribute name="created" value="SW50ZWwgRGVza3RvcDtERVNLVE9QLTNLRDJVUVY7MjAyMC0xMS0yNjsxMjo0NjowMSBQTTszNjIx"/>
+        <attribute name="edited" value="SW50ZWwgRGVza3RvcDtERVNLVE9QLTNLRDJVUVY7MjAyMC0xMS0yNjswMToxNTozMyBQTTsxOzM3Mjg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="terkecil, terbesar, ratarata, bil1, bil2, bil3" type="Integer" array="False" size=""/>
+            <input variable="bil1"/>
+            <input variable="bil2"/>
+            <input variable="bil3"/>
+            <assign variable="terkecil" expression="bil1"/>
+            <if expression="bil2 &lt; terkecil">
+                <then>
+                    <assign variable="terkecil" expression="bil2"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="bil3 &lt; terkecil">
+                <then>
+                    <assign variable="terkecil" expression="bil3"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="terbesar" expression="bil1"/>
+            <if expression="bil2 &gt; terbesar">
+                <then>
+                    <assign variable="terbesar" expression="bil2"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="bil3 &gt; terbesar">
+                <then>
+                    <assign variable="terbesar" expression="bil3"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="ratarata" expression="(bil1+bil2+bil3)/3"/>
+            <output expression="terbesar" newline="True"/>
+            <output expression="terkecil" newline="True"/>
+            <output expression="ratarata" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

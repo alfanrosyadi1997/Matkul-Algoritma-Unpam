@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Intel Desktop"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-24 07:06:33 PM"/>
+        <attribute name="created" value="SW50ZWwgRGVza3RvcDtERVNLVE9QLTNLRDJVUVY7MjAyMC0xMS0yNDswNjozNzozNiBQTTszNjMw"/>
+        <attribute name="edited" value="SW50ZWwgRGVza3RvcDtERVNLVE9QLTNLRDJVUVY7MjAyMC0xMS0yNDswNzowNjozMyBQTTsxOzM3MzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <declare name="y" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <assign variable="x" expression="x + y"/>
+            <assign variable="y" expression="x - y"/>
+            <assign variable="x" expression="x - y"/>
+            <output expression="x" newline="True"/>
+            <output expression="y" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

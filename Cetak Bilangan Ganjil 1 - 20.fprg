@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Intel Desktop"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-26 08:04:30 PM"/>
+        <attribute name="created" value="SW50ZWwgRGVza3RvcDtERVNLVE9QLTNLRDJVUVY7MjAyMC0xMS0yNjswNzo1ODozNCBQTTszNjM0"/>
+        <attribute name="edited" value="SW50ZWwgRGVza3RvcDtERVNLVE9QLTNLRDJVUVY7MjAyMC0xMS0yNjswODowNDozMCBQTTsxOzM3MzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <assign variable="n" expression="20"/>
+            <for variable="i" start="1" end="20" direction="inc" step="1">
+                <if expression="i%2!=0">
+                    <then>
+                        <output expression="i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
